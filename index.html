@@ -5,14 +5,23 @@
 	<style>
 		body {
 			background-color: black;
+			background-image: url("files/Grid.png");
+			background-repeat: repeat;
+			animation: moveBackground 20s linear infinite;
 			color: white;
-			font-size: 24px;
+			font-size: calc(25px + 2vw);;
 			font-family: sans-serif;
 			text-align: center;
 			margin: 0;
 			padding: 0;
 			
 		}
+
+		@keyframes moveBackground {
+			from { background-position: 0 0; }
+			to { background-position: -100% 0; }
+		}
+
 		.container {
 			display: flex;
 			flex-direction: column;
@@ -26,7 +35,7 @@
 			max-width: 600px;
 			padding: 30px;
 			box-sizing: border-box;
-			border-radius: 10px;
+			border-radius: calc(10px + 2vw);
 			animation: fade-in 2s;
 		}
 		@keyframes fade-in {
@@ -38,9 +47,9 @@
 			color: white;
 			padding: 10px;
 			border: none;
-			border-radius: 5px;
+			border-radius: calc(5px + 2vw);
 			margin-bottom: 10px;
-			font-size: 18px;
+			font-size: calc(15px + 2vw);;
 			font-family: sans-serif;
 			cursor: pointer;
 			transition: background-color 0.3s ease-in-out;
@@ -54,10 +63,8 @@
 	<h1>Funny Page</h1>
 	<div class="container">
 		<div class="box">
-			<button onclick="window.location.href='https://www.google.com'">Google</button>
-			<button onclick="window.location.href='https://www.youtube.com'">YouTube</button>
-			<button onclick="window.location.href='https://www.reddit.com'">Reddit</button>
-			<button onclick="window.location.href='https://www.facebook.com'">Facebook</button>
+			<button onclick="window.location.href='hiden/funnyjoke.html'">funny</button>
+			<button onclick="window.location.href='https://twitter.com/SpriteSheetRick'">My Tweeter</button>
 		</div>
 	</div>
 </body>
